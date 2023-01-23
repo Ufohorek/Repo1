@@ -11,7 +11,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             int year;
-            Console.Write("Enter the Year :");
+            Console.Write("Введите код :");
             year = Convert.ToInt32(Console.ReadLine());
             if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
                 Console.WriteLine("{0} високосный", year);
