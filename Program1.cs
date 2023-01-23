@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,16 +13,13 @@ namespace ConsoleApp1
             int year;
             Console.Write("Enter the Year :");
             year = Convert.ToInt32(Console.ReadLine());
-            if ((year % 4 == 0))
-                Console.WriteLine("{0} Високосный", year);
+            if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+                Console.WriteLine("{0} високосный", year);
             else
-                Console.WriteLine("{0} не високосный   ", year);
+                Console.WriteLine("{0} не високосный", year);
 
 
             Console.ReadLine();
         }
     }
         }
-        
-    
-
